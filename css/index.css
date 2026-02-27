@@ -1,0 +1,168 @@
+header {
+    padding: 5vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_sub_p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: right;
+    line-height: 2;
+}
+
+/* MEDIA QUERY FOR MOBILE */
+@media (max-width: 768px) {
+    header {
+        padding: 2vh 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header_sub_p {
+        text-align: left;
+    }
+}
+
+.section_introduction {
+    display: flex;
+}
+
+.section_introduction > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_introduction_p {
+    margin-bottom: 10px;
+}
+
+.section_introduction_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section_introduction_hr {
+    margin: 50px 0;
+}
+
+/* MEDIA QUERY FOR MOBILE */
+@media screen and (max-width: 768px) {
+    .section_introduction {
+        flex-direction: column;
+    }
+    
+    .section_introduction > div {
+        width: 100%;
+    }
+}
+
+.section_standard_equations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section_standard_equation {
+    border: 1px dashed;
+}
+
+.section_standard_p {
+    margin-top: 20px;
+}
+
+.section_standard_ul {
+    margin-left: 3rem;
+    line-height: 1.5;
+}
+
+.section_parts_p {
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.section_parts_ul {
+    margin-left: 3rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.section_parts_asymptote_equations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.section_parts_asymptote_equation {
+    border: 1px dashed;
+}
+
+.section_parts_figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px dashed;
+    padding: 20px;
+}
+
+.section_parts_p_1 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .section_parts_img {
+        width: 100%;
+    }
+}
+
+.section_formulas_ul {
+    margin-left: 3rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section_formulas_ul:last-child {
+    margin-bottom: 0;
+}
+
+.swiper_2 {
+    margin-top: 50px;
+    width: 50vw;
+}
+
+.swiper-slide {
+    border: 1px dashed;
+    padding: 20px;
+    background-color: #fbfbfb;
+}
+
+.practice_problem_equation {
+    border: 1px dashed;
+}
+
+@media (max-width: 768px) {
+    .swiper_2 {
+        width: 100%;
+    }
+}
+
+.swiper_ul {
+    margin-left: 3rem;
+    line-height: 1.5;
+}
+
+.section_common_ul {
+    margin-left: 3rem;
+    line-height: 1.5;
+}

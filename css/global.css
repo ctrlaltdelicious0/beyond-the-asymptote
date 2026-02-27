@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Arizona Serif';
+    src: url('../fonts/ABCArizonaSerifVariable-Trial.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Departure Mono';
+    src: url('../fonts/DepartureMono-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #fbfbfb;
+    padding: 0 20vw;
+}
+
+@media (max-width: 1366px) {
+    body {
+        padding: 0 5vw;
+    }
+}
+
+h1 {
+    font-family: 'Departure Mono';
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Departure Mono';
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Departure Mono';
+}
+
+p {
+    font-family: 'Arizona Serif';
+    font-size: 1rem;
+    line-height: 2;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+figcaption {
+    font-family: 'Arizona Serif';
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+hr {
+    border: 1px dashed;
+}
+
+section {
+    padding: 5vh 0;
+}
+
+li {
+    font-family: 'Arizona Serif';
+}
+
+footer {
+    padding-block: 50px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- BOILERPLATE -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- PAGE -->
+        <title>Beyond The Asymptote</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- JS -->
+        <script src="js/index.js" defer></script>
+
+            <!-- LENIS -->
+            <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+
+            <!-- KATEX -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+
+            <!-- DESMOS -->
+            <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=b17f29293f6c43849f8a08c5be55bf67"></script>
+
+            <!-- SWIPER -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>BEYOND THE ASYMPTOTE</h1>
+
+            <div class="header_sub">
+                <p class="header_sub_p">Everything you need to know about hyperbolas.</p>
+                <p class="header_sub_p">By Julian Balagtas [ BSCSSE / SE12 ]</p>
+            </div>
+        </header>
+
+        <hr>
+
+        <section class="section_introduction">
+            <div>
+                <h2># INTRODUCTION: WHAT IS A HYPERBOLA?</h2>
+
+                <p class="section_introduction_p">A hyperbola is a set of all points in a plane such that the <b>absolute difference of the distances from two fixed points (called foci)</b> is constant.</p>
+
+                <p class="section_introduction_p">It is one of the conic sections formed by slicing a double cone. Unlike circles and ellipses, a hyperbola has <b>two separate branches.</b></p>
+
+                <p class="section_introduction_p">Key idea:</p>
+
+                <p>- Difference of distances to two foci = constant</p>
+
+                <hr class="section_introduction_hr">
+
+                <figure>
+                    <img class="section_introduction_img" src="img/hyperbola2.png" alt="Hyperbola graph showing two branches.">
+                    <figcaption>Figure 1: Hyperbola graph showing two branches.</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img class="section_introduction_img" src="img/hyperbola1_bw.png" alt="Hyperbola in 3D conical view.">
+                    <figcaption>Figure 2:  Hyperbola in 3D conical view.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="section_standard">
+            <h2># STANDARD EQUATION OF A HYPERBOLA</h2>
+
+            <div class="section_standard_equations">
+                <h3>HORIZONTAL TRANSVERSE AXIS</h3>
+                <div id="horizontal" class="section_standard_equation"></div>
+
+                <h3>VERTICAL TRANSVERSE AXIS</h3>
+                <div id="vertical" class="section_standard_equation"></div>
+
+                <h3>RELATIONSHIP</h3>
+                <div id="relation" class="section_standard_equation"></div>
+            </div>
+
+            <p class="section_standard_p">Where:</p>
+
+            <ul class="section_standard_ul">
+                <li>(h, k) = center</li>
+                <li>a = distance from center to vertex</li>
+                <li>b = distance related to asymptotes</li>
+                <li>c = distance from center to focus</li>
+            </ul>
+
+            <p>In the relationship, notice the plus sign. Unlike the ellipse, the hyperbola uses addition here.</p>
+        </section>
+
+        <hr>
+
+        <section class="section_parts">
+            <h2># PARTS OF A HYPERBOLA</h2>
+
+            <p class="section_parts_p">These are the parts of a hyperbola:</p>
+
+            <ul class="section_parts_ul">
+                <li>Center (h, k) or (0, 0)</li>
+                <li>Vertices</li>
+                <li>Foci</li>
+                <li>Transverse axis</li>
+                <li>Conjugate axis</li>
+                <li>Asymptotes</li>
+            </ul>
+
+            <h2># ASYMPTOTES</h2>
+
+            <div class="section_parts_asymptote_equations">
+                <h3>HORIZONTAL PARABOLA</h3>
+                <div id="horizontal_asymptote" class="section_parts_asymptote_equation"></div>
+
+                <h3>VERTICAL PARABOLA</h3>
+                <div id="vertical_asymptote" class="section_parts_asymptote_equation"></div>
+            </div>
+
+            <p class="section_parts_p_1">Asymptotes are lines that the hyperbola approaches but never touches.</p>
+
+            <h2># GRAPH OF PARTS</h2>
+
+            <figure class="section_parts_figure">
+                <img src="img/parts.png" alt="Parts of a Hyperbola" class="section_parts_img">
+                <figcaption>Figure 3: Parts of a Hyperbola</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2># FORMULAS</h2>
+
+            <h3>HORIZONTAL TRANSVERSE</h3>
+
+            <ul class="section_formulas_ul">
+                <li>Vertices = (h ± a, k)</li>
+                <li>Foci = (h ± c, k)</li>
+            </ul>
+
+            <h3>VERTICAL TRANSVERSE</h3>
+
+            <ul class="section_formulas_ul">
+                <li>Vertices = (h, k ± a)</li>
+                <li>Foci = (h, k ± c)</li>
+            </ul>
+
+            <h3>LENGTHS</h3>
+
+            <ul class="section_formulas_ul">
+                <li>Transverse Axis = 2a</li>
+                <li>Conjugate Axis = 2b</li>
+            </ul>
+
+            <h3>ECCENTRICITY</h3>
+
+            <ul class="section_formulas_ul">
+                <li>e = c / a</li>
+                <li>for Hyperbola: e > 1</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2># PRACTICE PROBLEMS</h2>
+
+            <div class="swiper swiper_2">
+                    <div class="swiper-wrapper swiper_2_wrapper">
+                        <div class="swiper-slide swiper_slide_2">
+                            <h2>#1 [ BASIC ]</h2>
+
+                            <p>Identify the center, vertices, and foci of:</p>
+                            <div id="practice_problem_1" class="practice_problem_equation"></div>
+                        </div>
+
+                        <div class="swiper-slide swiper_slide_2">
+                            <h2>#2 [ BASIC ]</h2>
+
+                            <p>Write the equation of a hyperbola centered at (0,0) with:</p>
+
+                            <ul class="swiper_ul">
+                                <li>a = 4</li>
+                                <li>b = 3</li>
+                                <li>Horizontal Transverse Axis</li>
+                            </ul>
+                        </div>
+
+                        <div class="swiper-slide swiper_slide_2">
+                            <h2>#3 [ INTERMEDIATE ]</h2>
+
+                            <p>Find the asymptotes of:</p>
+                            <div id="practice_problem_2" class="practice_problem_equation"></div>
+                        </div>
+
+                        <div class="swiper-slide swiper_slide_2">
+                            <h2>#4 [ INTERMEDIATE ]</h2>
+
+                            <p>If a hyperbola has:</p>
+
+                            <ul class="swiper_ul">
+                                <li>center at (0, 0)</li>
+                                <li>vertices at (±5, 0)</li>
+                                <li>foci at (±13, 0)</li>
+                            </ul>
+
+                            <p>Find its equation.</p>
+                        </div>
+
+                        <div class="swiper-slide swiper_slide_2">
+                            <h2>#5 [ CHALLENGE ]</h2>
+
+                            <p>Derive the value of b if:</p>
+
+                            <ul class="swiper_ul">
+                                <li>a = 6</li>
+                                <li>c = 10</li>
+                            </ul>
+                        </div>
+
+                        <div class="swiper-slide swiper_slide_2">
+                            <h2>#6 [ CHALLENGE ]</h2>
+
+                            <p>Convert this into standard form:</p>
+
+                            <div id="practice_problem_3" class="practice_problem_equation"></div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2># COMMON MISTAKES</h2>
+
+            <ul class="section_common_ul">
+                <li>Mixing up + and - signs</li>
+                <li>Using wrong asymptote formula</li>
+                <li>Forgetting that hyperbola has TWO branches</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <footer>
+            <h2># THANK YOU FOR READING!</h2>
+            
+            <p>Julian's Portfolio:</p>
+            <a href="https://julianbalagtas.vercel.app" target="_blank" rel="noopener noreferrer">https://julianbalagtas.vercel.app</a>
+        </footer>
+    </body>
+</html>
