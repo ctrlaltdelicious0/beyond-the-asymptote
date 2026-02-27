@@ -75,6 +75,9 @@ footer {
 }
 
 a {
-    color: gray;
+    color: rgb(84, 84, 95);
     text-decoration: none;
+    font-family: 'Arizona Serif';
+    font-style: italic;
+    font-weight: 500;
 }
