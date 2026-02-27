@@ -15,7 +15,10 @@
 }
 
 body {
-    background-color: #fbfbfb;
+    background-image: url(../img/bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0 20vw;
 }
 
